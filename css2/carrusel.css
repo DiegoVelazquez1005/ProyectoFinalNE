@@ -12,7 +12,6 @@
 
 .carousel-inner img {
   width: 100%;
-  /*margin: auto;*/
 }
 
 .carousel-caption h3 {
@@ -28,7 +27,7 @@
 }
 #img_carrousel {
   width: 100%;
-  height: 500px;
+  height: 550px;
 }
 
 @media (max-width: 700px) {

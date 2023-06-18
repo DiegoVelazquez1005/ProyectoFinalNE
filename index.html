@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=[240px]" />
-    <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale-1.0, maximum-scale-1.0, minimum-scale-1.0,"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
@@ -44,25 +36,32 @@
           document.documentElement.scrollTop = 0;
         }
   </script>
+  <style>
+    .nombres{
+      font-family: Century Gothic;
+    }
+  </style>
   </head>
   <body style="background-color: white">
     <div class="contenedor">
       <!--barra de navegacion-->
-      <nav class="navbar navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-1">
+          <div class="navbar-header" >
+            <button class="navbar-toggle" type="button"  data-toggle="collapse" data-target="#barra-1" >
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
-            </button>
-            <div style="display: flex; align-items: center;">
-              <img height="50px" style="margin-top: 5px" src="imagenes/schoolLogo.png" />
-            </div>
+              </button>
+            <img
+              height="50px"
+              style="margin-top: 5px"
+              src="imagenes/schoolLogo.png"
+            />
           </div>
           <div class="collapse navbar-collapse" id="barra-1">
             <ul id="lin" class="nav navbar-nav">
-              <li>
+              <li class="nombres">
                 <div style="background-color: #0364d3; color: white; padding: 15px 5px 5px 5px; margin-left: 10px;">
                   <span style="font-weight: bold; margin-right: 5px; font-size: 12px;" > Guzmán S. |</span>
                   <span style="font-weight: bold; margin-right: 5px; font-size: 12px;"> Tapia E. |</span>
@@ -75,13 +74,13 @@
                   Inicio
                 </a>
               </li>
-              <li class="dropdown">
+              <li class="dropdown" >
                 <a class="dropdown-toggle" data-toggle="dropdown">
                   <span class="glyphicon glyphicon-book"></span>
                   Grado Ecolar
                   <span class="caret"></span>
                 </a>
-                <ul id="cursos" class="dropdown-menu dropdown-content">
+                <ul id="cursos" class="dropdown-menu estilo ">
                   <li><a href="primaria.html" target="_self">Primaria</a></li>
                   <li><a href="secundaria.html" target="_self">Secundaria</a></li>
                   <li><a href="preparatoria.html" target="_self">Preparatoria</a></li>
@@ -98,7 +97,6 @@
           </div>
         </div>
       </nav>
-      
       <!--Modal -->
       <div class="modal fade" id="myModal" role="dialog">
         <div class="modal-dialog modal-lg">
@@ -211,9 +209,9 @@
           </div>
         </div>
       </div>
-      
       <!--/Modal-->
-
+      <br>
+      <br>
       <!--Carrusel-->
       <div id="myCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicadores -->
@@ -305,11 +303,12 @@
             <div class="col-4 col-m-4 col-s">
               <div align="center">
                 <div class="card" align="center" width="100%">
-                <a href="#" onclick= "mostrarPersona('imagenes/Diego.jpeg', '&quot;Como CEO de nuestra escuela, mi objetivo es liderar un equipo dedicado a formar líderes innovadores en todos los niveles educativos, fomentando valores éticos, investigación, aprendizaje y servicio a la comunidad.&quot; - Diego Velázquez')">
-                  <img id="esq" width="80%" height="250px" src="imagenes/Diego.jpeg" alt="Avatar1"></img></a>
-                  <div style="padding:25px">        
-                    <p>
-                      CEO (Director Ejecutivo)
+                <a href="#" onclick= "mostrarPersona('imagenes/Diego.jpg', '&quot;Como CEO de nuestra escuela, mi objetivo es liderar un equipo dedicado a formar líderes innovadores en todos los niveles educativos, fomentando valores éticos, investigación, aprendizaje y servicio a la comunidad.&quot; - Diego Velázquez')">
+                  <img id="esq" width="80%" height="30%" src="imagenes/Diego.jpg" alt="Avatar1"></img></a>
+                  <div style="padding:10%">        
+                    <p style="text-align: center;">
+                      CEO <br>
+                      (Director Ejecutivo)
                     </p>
                   </div>
                 </div>
@@ -318,11 +317,12 @@
             <div class="col-4 col-m-4 col-s">
               <div align="center">
                 <div class="card" align="center">
-                  <a href="#" onclick= "mostrarPersona('imagenes/Sergio.jfif', '&quot;Como CTO de nuestra escuela, mi enfoque es impulsar la innovación tecnológica en todos los niveles educativos, proporcionando herramientas y soluciones tecnológicas que respalden la investigación, el aprendizaje y el servicio a la comunidad, en línea con nuestra visión de ser líderes a nivel nacional.&quot; - Sergio Guzmán')">
-                  <img id="esq" width="80%" height="250px" src="imagenes/Sergio.jfif" alt="Avatar2"></img></a>
-                  <div style="padding:25px" >        
-                    <p>
-                      CTO (Director de Tecnología)
+                  <a href="#" onclick= "mostrarPersona('imagenes/Sergio.jpg', '&quot;Como CTO de nuestra escuela, mi enfoque es impulsar la innovación tecnológica en todos los niveles educativos, proporcionando herramientas y soluciones tecnológicas que respalden la investigación, el aprendizaje y el servicio a la comunidad, en línea con nuestra visión de ser líderes a nivel nacional.&quot; - Sergio Guzmán')">
+                  <img id="esq" width="80%" height="30%" src="imagenes/Sergio.jpg" alt="Avatar2"></img></a>
+                  <div style="padding:10%" >        
+                    <p style="text-align: center;">
+                      CTO <br>
+                      (Director de Tecnología)
                     </p>
                   </div>
                 </div>
@@ -331,11 +331,12 @@
             <div class="col-4 col-m-4 col-s">
               <div align="center">
                 <div class="card" align="center">
-                  <a href="#" onclick= "mostrarPersona('imagenes/Eduardo.jpeg', '&quot;Como CFO de nuestra escuela, mi responsabilidad es garantizar una gestión financiera sólida y sostenible, brindando los recursos necesarios para cumplir nuestra misión de educar líderes innovadores y contribuir al crecimiento de la sociedad.&quot; - Eduardo Tapia')">
-                  <img id="esq" width="80%" height="250px" src="imagenes/Eduardo.jpeg" alt="Avatar3"></img></a>
-                  <div style="padding:25px" >        
-                    <p>
-                      CFO (Director Financiero)
+                  <a href="#" onclick= "mostrarPersona('imagenes/Eduardo.jpg', '&quot;Como CFO de nuestra escuela, mi responsabilidad es garantizar una gestión financiera sólida y sostenible, brindando los recursos necesarios para cumplir nuestra misión de educar líderes innovadores y contribuir al crecimiento de la sociedad.&quot; - Eduardo Tapia')">
+                  <img id="esq" width="80%" height="30%" src="imagenes/Eduardo.jpg" alt="Avatar3"></img></a>
+                  <div style="padding:10%" >        
+                    <p style="text-align: center;">
+                      CFO <br>
+                      (Director Financiero)
                     </p>
                   </div>
                 </div>
@@ -343,7 +344,7 @@
             </div> 
                 <!-- Ventana emergente -->
             <div id="ventanaPersona" class="modal fade" tabindex="-1" role="dialog" aria-hidden="false">
-              div class="modal-dialog modal-dialog-centered">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-body">
                     <div class="row">
@@ -366,6 +367,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
       <!--Mision-->
       <div width="100%" class="texto">
@@ -466,10 +468,7 @@
       </button>
     </div>
   </footer>
-
   <!--/footer-->
 </html>
-<!--
-  
--->
+
 

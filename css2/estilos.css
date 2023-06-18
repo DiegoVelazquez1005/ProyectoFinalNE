@@ -54,8 +54,6 @@ h1 {
 }
 
 .box {
-  /*border-radius: 10px;
-        border: 0px transparent;*/
   color: white;
   background-color: #2d2d30;
   height: 100%;
@@ -65,7 +63,6 @@ h1 {
 
 * {
   box-sizing: border-box;
-  /*border: 1px solid blue;*/
 }
 
 .row::after {
@@ -77,13 +74,8 @@ h1 {
 [class*="col-"] {
   float: left;
   padding: 15px;
-
-  /*border: 1px solid red;*/
 }
 
-
-
-/* For mobile phones: */
 [class*="col-"] {
   width: 100%;
 }
@@ -233,6 +225,7 @@ h1 {
   color: #2d2d30;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.1s;
+  padding: 5px;
 }
 
 .card:hover {

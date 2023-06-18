@@ -1,39 +1,19 @@
-.nav-tabs li a {
-  font-family: Century Gothic;
-  color: #ffffff;
-}
-.navbar-fixed-top {
+.navbar{
   background-color: #0364d3;
-}
-.navbar .cont .{
-  font-family: Century Gothic; /*, sans-serif*/
-  margin-bottom: 0;
-  border: 0;
-  font-size: 11px !important;
-  letter-spacing: 4px;
-  opacity: 1;
+  border-color: #0364d3;
 }
 
 .navbar li a,
 .navbar .navbar-brand {
   background-color: #0364d3;
   color: #ffffff !important;
-  /*border-bottom: dotted 1px;*/
 }
 
 #lin li a:hover {
   color: #002b5c !important;
   font-size: 16px;
   border-bottom-color: transparent;
-}
-/*.navbar-nav li a:hover 
-{
-color:red !important;
-} */
-
-.navbar-default .navbar-toggle {
-  border-color: #002b5c transparent;
-  border: 0;
+  background-color: #0364d3;
 }
 
 .dropdown-menu li a {
@@ -44,21 +24,7 @@ color:red !important;
   /*border-bottom: dotted 10px;*/
 }
 
-#navegacion li a:hover {
-  background-color: #0364d3 !important;
-  color: #002b5c !important;
-}
-
-/*#rojo li a:hover {
-  background-color: !important;
-  color: #01adb6 !important;
-}
-/*.dropdown-menu li a:hover 
-{
-background-color: #03F007 !important;
-} */
-
-.dropdown-content {
+.estilo {
   display: none;
   position: absolute;
   min-width: 120px;

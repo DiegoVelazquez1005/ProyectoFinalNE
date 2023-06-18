@@ -48,7 +48,7 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
-    
+
     <style>
       /* Estilos de la tabla */
       table {
@@ -57,52 +57,52 @@
         border-collapse: collapse;
         border: 2px solid #60c6ee; /* Borde sólido de color azul oscuro */
       }
-    
-      th, td {
+
+      th,
+      td {
         padding: 8px;
         border: 1px solid #60c6ee; /* Borde sólido de color azul oscuro */
       }
-    
+
       th {
         background-color: #60c6ee;
         color: #ffffff;
         text-align: center; /* Centra el texto del encabezado "Año" */
       }
-    
+
       /* Estilos adicionales */
       .texto {
         text-align: center; /* Centra el contenido del contenedor */
       }
-    
+
       .logo {
         width: 40px; /* Ancho de la imagen de los libros */
         vertical-align: middle; /* Alineación vertical al centro */
       }
-    
+
       .materias-cell {
         position: relative; /* Posición relativa para alinear la imagen y el texto */
       }
-    
+
       .materias-cell img {
         float: left; /* Alinea la imagen a la izquierda */
         margin-right: 10px; /* Espacio entre la imagen y el texto */
       }
-    
+
       .materias-text {
         vertical-align: middle; /* Alineación vertical al centro */
       }
     </style>
-    
   </head>
   <body style="background-color: white">
     <div class="contenedor">
       <!--barra de navegacion-->
-      <nav class="navbar navbar-fixed-top">
+      <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
             <button
+              class="navbar-toggle"
               type="button"
-              class="navbar-toggle collapsed"
               data-toggle="collapse"
               data-target="#barra-1"
             >
@@ -130,7 +130,7 @@
                   Grado Ecolar
                   <span class="caret"></span>
                 </a>
-                <ul id="cursos" class="dropdown-menu dropdown-content">
+                <ul id="cursos" class="dropdown-menu estilo">
                   <li><a href="primaria.html" target="_self">Primaria</a></li>
                   <li>
                     <a href="secundaria.html" target="_self">Secundaria</a>
@@ -273,17 +273,24 @@
           <h1>Plan de estudios</h1>
           <br />
           <p>
-            Nuestro plan de estudios de primaria se basa en un enfoque integral que abarca asignaturas fundamentales como matemáticas, 
-            español, ciencias y estudios sociales. Además, ofrecemos actividades prácticas, arte, música y educación física para promover 
-            un aprendizaje holístico.
+            Nuestro plan de estudios de primaria se basa en un enfoque integral
+            que abarca asignaturas fundamentales como matemáticas, español,
+            ciencias y estudios sociales. Además, ofrecemos actividades
+            prácticas, arte, música y educación física para promover un
+            aprendizaje holístico.
           </p>
           <br />
         </div>
         <table>
           <thead>
             <tr>
-              <th style="text-align: left; vertical-align: middle;">
-                <img src="imagenes/books.png" alt="Libros" width="30px" style="float: left; margin-right: 10px;">
+              <th style="text-align: left; vertical-align: middle">
+                <img
+                  src="imagenes/books.png"
+                  alt="Libros"
+                  width="30px"
+                  style="float: left; margin-right: 10px"
+                />
                 Materias
               </th>
               <th>Grado escolar</th>
@@ -291,27 +298,45 @@
           </thead>
           <tbody>
             <tr>
-              <td>Español, Matemáticas, Ciencias naturales, Educación física y artística, Formacion cívica y ética, Computación, Inglés</td>
+              <td>
+                Español, Matemáticas, Ciencias naturales, Educación física y
+                artística, Formacion cívica y ética, Computación, Inglés
+              </td>
               <td>1°</td>
             </tr>
             <tr>
-              <td>Español, Matemáticas, Ciencias naturales, Educación física y artística, Formacion cívica y ética, Computación, Inglés</td>
+              <td>
+                Español, Matemáticas, Ciencias naturales, Educación física y
+                artística, Formacion cívica y ética, Computación, Inglés
+              </td>
               <td>2°</td>
             </tr>
             <tr>
-              <td>Español, Matemáticas, Ciencias naturales, Educación física, Formacion cívica y ética, Computación, Inglés</td>
+              <td>
+                Español, Matemáticas, Ciencias naturales, Educación física,
+                Formacion cívica y ética, Computación, Inglés
+              </td>
               <td>3°</td>
             </tr>
             <tr>
-              <td>Español, Matemáticas, Ciencias naturales, Natación, Historia, Geografía, Música, Computación, Inglés, Francés</td>
+              <td>
+                Español, Matemáticas, Ciencias naturales, Natación, Historia,
+                Geografía, Música, Computación, Inglés, Francés
+              </td>
               <td>4°</td>
             </tr>
             <tr>
-              <td>Español, Matemáticas, Ciencias naturales, Natación, Historia, Geografía, Música, Computación, Inglés, Francés</td>
+              <td>
+                Español, Matemáticas, Ciencias naturales, Natación, Historia,
+                Geografía, Música, Computación, Inglés, Francés
+              </td>
               <td>5°</td>
             </tr>
             <tr>
-              <td>Español, Matemáticas, Ciencias naturales, Natación, Historia, Geografía, Música, Computación, Inglés, Francés</td>
+              <td>
+                Español, Matemáticas, Ciencias naturales, Natación, Historia,
+                Geografía, Música, Computación, Inglés, Francés
+              </td>
               <td>6°</td>
             </tr>
           </tbody>
@@ -325,19 +350,25 @@
           <h1>Instalaciones</h1>
           <br />
           <p>
-            Contamos con aulas luminosas y espaciosas, diseñadas especialmente para fomentar un entorno de aprendizaje estimulante.
-            Nuestras instalaciones incluyen una biblioteca repleta de libros fascinantes, un patio de recreo equipado con juegos seguros
-            y áreas verdes para que los niños exploren y jueguen
+            Contamos con aulas luminosas y espaciosas, diseñadas especialmente
+            para fomentar un entorno de aprendizaje estimulante. Nuestras
+            instalaciones incluyen una biblioteca repleta de libros fascinantes,
+            un patio de recreo equipado con juegos seguros y áreas verdes para
+            que los niños exploren y jueguen
             <br />
             <br />
-            <img src="imagenes/classroom.jpg" alt="Imagen de las instalaciones" style="max-width: 100%;" />
+            <img
+              src="imagenes/classroom.jpg"
+              alt="Imagen de las instalaciones"
+              style="max-width: 100%"
+            />
           </p>
           <br />
         </div>
       </div>
       <!--actividades-->
       <div width="100%" class="texto">
-        <div style="background-color:  #ffffff; color: #002b5c; height: 100%">
+        <div style="background-color: #ffffff; color: #002b5c; height: 100%">
           <br />
           <h1>Actividades extracurriculares</h1>
           <br />
@@ -377,7 +408,9 @@
         <div id="ftstl" style="text-align: center">
           <br />
           <br />
-          <p class="ultima-actualizacion">Última actualización de la página: <span id="last-modified"></span></p>
+          <p class="ultima-actualizacion">
+            Última actualización de la página: <span id="last-modified"></span>
+          </p>
         </div>
       </div>
       <div class="col-8 col-m-12 sidenav" align="center">
@@ -419,7 +452,7 @@
             />
           </a>
           <br /><br />
-          <a href="https://www.instagram.com/?hl=es"target="_blank">
+          <a href="https://www.instagram.com/?hl=es" target="_blank">
             <img
               src="socialicon/icons/256/Instagram.png"
               class="img-rounded"
@@ -432,7 +465,7 @@
       </div>
       <button onclick="topFunction()" id="myBtn" title="Go to top">
         <span class="glyphicon glyphicon-chevron-up" id="top">
-          <p id="topText" style="color: black;" >Top</p>
+          <p id="topText" style="color: black">Top</p>
         </span>
       </button>
     </div>

@@ -32,14 +32,6 @@
 			border-radius: 10px;
 			text-align:center;
 }
-/*#myBtn {
-  position: fixed;
-  left: 510px;
-  display: none;
-  bottom: 30px;
-  border: none;
-  background-color: transparent;
-}*/
 
 #myBtn:hover {
   background-color: transparent;
