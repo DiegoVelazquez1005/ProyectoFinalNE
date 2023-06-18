@@ -48,6 +48,49 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
+    <style>
+      /* Estilos de la tabla */
+      table {
+        width: auto; /* Ajusta la tabla al contenido */
+        margin: 0 auto; /* Centra la tabla horizontalmente */
+        border-collapse: collapse;
+        border: 2px solid #191970 ; 
+      }
+
+      th, td {
+        padding: 8px;
+        border: 1px solid #191970 ; 
+      }
+
+      th {
+        background-color: #191970 ;
+        color: #ffffff;
+        text-align: center; /* Centra el texto del encabezado "Año" */
+      }
+
+      /* Estilos adicionales */
+      .texto {
+        text-align: center; /* Centra el contenido del contenedor */
+      }
+
+      .logo {
+        width: 40px; /* Ancho de la imagen de los libros */
+        vertical-align: middle; /* Alineación vertical al centro */
+      }
+
+      .materias-cell {
+        position: relative; /* Posición relativa para alinear la imagen y el texto */
+      }
+
+      .materias-cell img {
+        float: left; /* Alinea la imagen a la izquierda */
+        margin-right: 10px; /* Espacio entre la imagen y el texto */
+      }
+
+      .materias-text {
+        vertical-align: middle; /* Alineación vertical al centro */
+      }
+    </style>
   </head>
   <body style="background-color: white">
     <div class="contenedor">
@@ -74,7 +117,7 @@
           <div class="collapse navbar-collapse" id="barra-1">
             <ul id="lin" class="nav navbar-nav">
               <li>
-                <a href="index.html">
+                <a href="index.html" target="_self">
                   <span class="glyphicon glyphicon-home"></span>
                   Inicio
                 </a>
@@ -86,12 +129,12 @@
                   <span class="caret"></span>
                 </a>
                 <ul id="cursos" class="dropdown-menu dropdown-content">
-                  <li><a href="primaria.html" target="_blank">Primaria</a></li>
+                  <li><a href="primaria.html" target="_self">Primaria</a></li>
                   <li>
-                    <a href="secundaria.html" target="_blank">Secundaria</a>
+                    <a href="secundaria.html" target="_self">Secundaria</a>
                   </li>
                   <li>
-                    <a href="preparatoria.html" target="_blank">Preparatoria</a>
+                    <a href="preparatoria.html" target="_self">Preparatoria</a>
                   </li>
                 </ul>
               </li>
@@ -222,8 +265,49 @@
         </div>
       </div>
       <!--plan de estudios-->
-      <div width="100%" class="texto">
+      <div class="texto">
         <div style="background-color: #ffffff; color: #002b5c; height: 100%">
+          <br />
+          <h1>Plan de estudios</h1>
+          <br />
+          <p>
+            Nuestro plan de estudios de nivel preparatoria se basa en una educación integral y amplia que busca proporcionar 
+            a los estudiantes una base sólida para su desarrollo académico y personal. Enfocamos nuestras asignaturas en áreas 
+            fundamentales como matemáticas, español y ciencias, brindando a los estudiantes las herramientas necesarias para comprender 
+            y aplicar conceptos complejos en cada una de estas disciplinas.
+          </p>
+          <br />
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align: left; vertical-align: middle;">
+                <img src="imagenes/books.png" alt="Libros" width="30px" style="float: left; margin-right: 10px;">
+                Materias
+              </th>
+              <th>Grado escolar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Álgebra y geometría, Literatura, Historia de México y universal, Geografía, Química, Inglés</td>
+              <td>1°</td>
+            </tr>
+            <tr>
+              <td>Cálculo diferencial, Redacción, Física, Inglés, Cibernetica y computación, Alemán</td>
+              <td>2°</td>
+            </tr>
+            <tr>
+              <td>Cálculo integral, Ánalisis de textos, Probabilidad y Estadística, Preparacion Universitaria, Economía</td>
+              <td>3°</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <br />
+      <br />
+      <div width="100%" class="texto">
+        <div style="background-color:#002b5c; color: white; height: 100%">
           <br />
           <h1>Servicios de asesoramiento universitario</h1>
           <br />
@@ -240,7 +324,7 @@
 
       <!--actividades-->
       <div width="100%" class="texto">
-        <div style="background-color: #002b5c; color: white; height: 100%">
+        <div style="background-color: white; color: #002b5c; height: 100%">
           <br />
           <h1>Apoyo académico y orientación</h1>
           <br />
@@ -257,7 +341,7 @@
       </div>
       <!--docentes-->
       <div width="100%" class="texto">
-        <div style="background-color: white; color: #002b5c; height: 100%">
+        <div style="background-color:#002b5c; color: white; height: 100%">
           <br />
           <h1>Programas especiales</h1>
           <br />
@@ -269,6 +353,30 @@
             oportunidades de pasantías con empresas locales, programas de
             mentoría y participación en proyectos de investigación
           </p>
+          <p>Algunos otros programas especiales son los siguientes: </p>
+          <div class="row">
+            <div class="col-5"></div>  
+            <div class="col-2">
+              <p>
+                <ul style="list-style-type: none; padding-left: 0;">
+                  <li><img src="imagenes/lapiz.png" alt="Viñeta 1" style="vertical-align: middle; margin-right: 10px; width: 15px; height: 15px;" /> 
+                    <div style="vertical-align: middle;">Programa de mentoria </div>
+                  </li>
+                  <li><img src="imagenes/lapiz.png" alt="Viñeta 2" style="vertical-align: middle; margin-right: 10px; width: 15px; height: 15px;" /> 
+                    <div style="vertical-align: middle;"> Talleres de Liderazgo </div>
+                  </li>
+                  <li><img src="imagenes/lapiz.png" alt="Viñeta 3" style="vertical-align: middle; margin-right: 10px; width: 15px; height: 15px;" /> 
+                    <div style="vertical-align: middle;">Talleres artisticos</div>
+                  </li>
+                  <li><img src="imagenes/lapiz.png" alt="Viñeta 3" style="vertical-align: middle; margin-right: 10px; width: 15px; height: 15px;" /> 
+                    <div style="vertical-align: middle;">Talleres de emprendimiento juvenil</div>
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div class="col-4"></div>
+          </div>
+          <br />
           <br />
         </div>
       </div>
@@ -281,13 +389,9 @@
       <div class="col-2 col-m-12 sidenav" align="left">
         <br />
         <div id="ftstl" style="text-align: center">
-            <p class="ultima-actualizacion">Última actualización: <span id="last-modified"></span></p>
-            <p class="creadores">Creadores:</p>
-            <ul class="no-bullets">
-              <li class="creadores">Velázquez R., Diego</li>
-              <li class="creadores">Guzmán M., Sergio </li>
-              <li class="creadores">Tapia S., Eduardo </li>
-            </ul>
+          <br />
+          <br />
+          <p class="ultima-actualizacion">Última actualización de la página: <span id="last-modified"></span></p>
         </div>
       </div>
       <div class="col-8 col-m-12 sidenav" align="center">
@@ -309,7 +413,7 @@
       <div class="col-2 col-m-12sidenav" align="right">
         <div align="center">
           <p>Siguenos en:</p>
-          <a href="https://es-la.facebook.com/">
+          <a href="https://es-la.facebook.com/" target="_blank">
             <img
               src="socialicon/icons/256/Facebook.png"
               class="img-rounded"
@@ -319,7 +423,7 @@
             />
           </a>
           <br /><br />
-          <a href="https://twitter.com/?lang=es">
+          <a href="https://twitter.com/?lang=es" target="_blank">
             <img
               src="socialicon/icons/256/Twitter.png"
               class="img-rounded"
@@ -329,7 +433,7 @@
             />
           </a>
           <br /><br />
-          <a href="https://www.instagram.com/?hl=es">
+          <a href="https://www.instagram.com/?hl=es" target="_blank">
             <img
               src="socialicon/icons/256/Instagram.png"
               class="img-rounded"
