@@ -303,13 +303,11 @@
             <div class="col-4 col-m-4 col-s">
               <div align="center">
                 <div class="card" align="center" width="100%">
-                <a href="#" onclick= "mostrarPersona('imagenes/Diego.jpg', '&quot;Como CEO de nuestra escuela, mi objetivo es liderar un equipo dedicado a formar líderes innovadores en todos los niveles educativos, fomentando valores éticos, investigación, aprendizaje y servicio a la comunidad.&quot; - Diego Velázquez')">
+                  <a href="#" onclick= "mostrarPersona('imagenes/Diego.jpg', '&quot;Como CEO (Director Ejecutivo) de nuestra escuela, mi objetivo es liderar un equipo dedicado a formar líderes innovadores en todos los niveles educativos, fomentando valores éticos, investigación, aprendizaje y servicio a la comunidad.&quot; - Diego Velázquez')">
                   <img id="esq" width="80%" height="30%" src="imagenes/Diego.jpg" alt="Avatar1"></img></a>
                   <div style="padding:10%">        
-                    <p style="text-align: center;">
-                      CEO <br>
-                      (Director Ejecutivo)
-                    </p>
+                    <p id="P_Equipo" onclick="alternarTexto('Ing.Diego Velázquez', 'CEO')">Ing.Diego Velázquez</p>
+                    <p onclick="alternarTexto('Ing.Diego Velázquez', 'CEO')" style="text-align: center;">&#128070;</p>
                   </div>
                 </div>
               </div>
@@ -317,13 +315,11 @@
             <div class="col-4 col-m-4 col-s">
               <div align="center">
                 <div class="card" align="center">
-                  <a href="#" onclick= "mostrarPersona('imagenes/Sergio.jpg', '&quot;Como CTO de nuestra escuela, mi enfoque es impulsar la innovación tecnológica en todos los niveles educativos, proporcionando herramientas y soluciones tecnológicas que respalden la investigación, el aprendizaje y el servicio a la comunidad, en línea con nuestra visión de ser líderes a nivel nacional.&quot; - Sergio Guzmán')">
-                  <img id="esq" width="80%" height="30%" src="imagenes/Sergio.jpg" alt="Avatar2"></img></a>
+                  <a href="#" onclick= "mostrarPersona('imagenes/Sergio.jfif', '&quot;Como CTO (Director de Tecnología) de nuestra escuela, mi enfoque es impulsar la innovación tecnológica en todos los niveles educativos, proporcionando herramientas y soluciones tecnológicas que respalden la investigación, el aprendizaje y el servicio a la comunidad, en línea con nuestra visión de ser líderes a nivel nacional.&quot; - Sergio Guzmán')">
+                  <img id="esq" width="80%" height="30%" src="imagenes/Sergio.jfif" alt="Avatar2"></img></a>
                   <div style="padding:10%" >        
-                    <p style="text-align: center;">
-                      CTO <br>
-                      (Director de Tecnología)
-                    </p>
+                    <p id="P_Equipo2" onclick="alternarTexto2('Ing.Sergio Francisco', 'CTO')">Ing.Sergio Francisco </p>
+                    <p onclick="alternarTexto2('Ing.Sergio Francisco', 'CTO')" style="text-align: center;">&#128070;</p>
                   </div>
                 </div>
               </div>
@@ -331,38 +327,15 @@
             <div class="col-4 col-m-4 col-s">
               <div align="center">
                 <div class="card" align="center">
-                  <a href="#" onclick= "mostrarPersona('imagenes/Eduardo.jpg', '&quot;Como CFO de nuestra escuela, mi responsabilidad es garantizar una gestión financiera sólida y sostenible, brindando los recursos necesarios para cumplir nuestra misión de educar líderes innovadores y contribuir al crecimiento de la sociedad.&quot; - Eduardo Tapia')">
+                  <a href="#" onclick= "mostrarPersona('imagenes/Eduardo.jpg', '&quot;Como CFO (Director Financiero) de nuestra escuela, mi responsabilidad es garantizar una gestión financiera sólida y sostenible, brindando los recursos necesarios para cumplir nuestra misión de educar líderes innovadores y contribuir al crecimiento de la sociedad.&quot; - Eduardo Tapia')">
                   <img id="esq" width="80%" height="30%" src="imagenes/Eduardo.jpg" alt="Avatar3"></img></a>
                   <div style="padding:10%" >        
-                    <p style="text-align: center;">
-                      CFO <br>
-                      (Director Financiero)
-                    </p>
+                    <p id="P_Equipo3" onclick="alternarTexto3('Ing.Eduardo Tapia', 'CFO')">Ing.Eduardo Tapia</p>
+                    <p onclick="alternarTexto3('Ing.Eduardo Tapia', 'CFO')"style="text-align: center;">&#128070;</p>
                   </div>
                 </div>
               </div>
             </div> 
-                <!-- Ventana emergente -->
-            <div id="ventanaPersona" class="modal fade" tabindex="-1" role="dialog" aria-hidden="false">
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-body">
-                    <div class="row">
-                      <div class="col-6 col-m-6 col-s">
-                        <img id="ventanaImagen" src="" alt="Imagen" style="width: 100%;">
-                      </div>
-                      <div class="col-6 col-m-6 col-s">
-                        <p id="ventanaTexto"></p>
-                      </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-      
             <div class<="col-1 col-m-1 col-s inutil">
             </div>
           </div>
@@ -398,8 +371,81 @@
         </div>
       </div>
       <!--/Contenido-->
+            <!--/Image Map-->
+      <div width="100%" class="imageMP">
+        <div style="background-color:#002b5c; color:white; height:100%;">
+          <br>
+          <h1>Ubicación de nuestras sedes</h1>
+          <br>
+            <img src="imagenes/mapacdmx2.png" alt="MapIMG" usemap="#mapa">
+            <map name="mapa">
+              <area shape="polygon" coords="246,431,330,315,375,339,349,502" 
+                href="https://goo.gl/maps/NPL4F7M5MjGnhNUK8" 
+                target="_blank"
+                alt="Tlalpan" 
+                title="La sede de Tlalpan cuenta con:
+                  Primaria">
+              <area shape="polygon" coords="389,388,395,333,435,321,499,363" 
+                href="https://goo.gl/maps/La3fkN6zR7jsnms48" 
+                target="_blank"
+                alt="Xochimilco" 
+                title="La sede de Xochimilco cuenta con:
+                  Primaria
+                  Secundaria">
+              <area shape="polygon" coords="332,307,355,260,395,260,410,300" 
+                href="https://goo.gl/maps/6Z5YtorPbCHDdHJYA" 
+                target="_blank"
+                alt="Coyoacán" 
+                title="La sede de Coyoacán cuenta con:
+                  Primaria
+                  Secundaria
+                  Preparatoria">
+              <area 
+              shape="polygon" coords="380,499,431,404,523,386,546,439,541,518,486,513,460,545" 
+                href="https://goo.gl/maps/ozJNVehTNEmd6uSQ8" 
+                target="_blank"
+                alt="Milpa Alta" 
+                title="La sede de Milpa Alta cuenta con:
+                  Preparatoria">
+              <area shape="polygon" coords="502,381,517,355,462,322,473,300,543,290,532,355,556,385,523,376" 
+                href="https://goo.gl/maps/xLuSqJ1ZWgoEmkqL7" 
+                target="_blank"
+                alt="Tláhuac" 
+                title="La sede de Tláhuac cuenta con:
+                  Secundaria
+                  Preparatoria">
+              <area shape="polygon" coords="440,305,396,242,472,222,537,280,506,276,443,306" 
+                href="https://goo.gl/maps/uF8nShai1dXS4PrT8" 
+                target="_blank"
+                alt="Iztapalapa" 
+                title="La sede de Iztapalapa cuenta con:
+                  Preparatoria">
+            </map>
+          <br>
+          <br>
+      </div>  
     </div>
   </body>
+   <!-- Ventana emergente -->
+  <div id="ventanaPersona" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6" align="center">
+              <img id="ventanaImagen" src="" alt="Imagen" style="height: 250px;">
+            </div>
+            <div class="col-md-6" style="text-align: center">
+              <p id="ventanaTexto"></p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!--footer-->
   <footer>
     <div class="row content">
