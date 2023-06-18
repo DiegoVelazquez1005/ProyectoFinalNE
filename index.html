@@ -153,7 +153,7 @@
                   </div>
                   <br />
                   <!--Cuadros de texto-->
-                  <p>Contactanos para resolver tus dudas con algun tema</p>
+                  <p style="text-align:center">Forma parte de nuestra escuela y abre las puertas hacia un futuro prometedor. <br> ¡Inscríbete ahora!</p>
                   <div class="col-12">
                     <form id="formulario-contacto" method="post" action="pedidos.php">
                       <div class="row">
@@ -180,32 +180,62 @@
                           />
                         </div>
                       </div>
-                      <label for="comentario">Comentarios:</label>
-                      <input
-                        class="form-control"
-                        id="comentario"
-                        name="comentario"
-                        placeholder="comentario"
-                        type= "textarea"
-                        required 
-                        rows="5"                       
-                      >
-                      </input>
-                      <br />
-                      <div class="row">
-                        <div class="col-12 form-group">
-                          <button onclick="Perro()" class="btn pull-right" type="submit">
-                            enviar
-                          </button>
+                        <div class="row">
+                          <div class="col-6 form-group">
+                            <label for="nivel">Nivel:</label>
+                            <div class="radio">
+                              <label><input type="radio" name="nivel" value="primaria" required>Primaria</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="nivel" value="secundaria" required>Secundaria</label>
+                            </div>
+                            <div class="radio">
+                              <label><input type="radio" name="nivel" value="preparatoria" required>Preparatoria</label>
+                            </div>
+                          </div>
+                          <div class="col-6 form-group">
+                            <label>Opciones:</label>
+                            <div class="checkbox">
+                              <label><input type="checkbox" name="opcion[]" value="becas">Becas</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" name="opcion[]" value="intercambios">Intercambios</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" name="opcion[]" value="noticias">Noticias</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" name="opcion[]" value="promociones">Promociones</label>
+                            </div>
+                            <div class="checkbox">
+                              <label><input type="checkbox" name="opcion[]" value="eventos">Eventos</label>
+                            </div>
+                          </div>
                         </div>
+                        <div class="row">
+                          <label for="pago">Forma de Pago:</label>
+                          <select class="form-control" id="pago" name="pago" required>
+                            <option value="quincenal">Quincenal</option>
+                            <option value="mensual">Mensual</option>
+                            <option value="semestral">Semestral</option>
+                            <option value="anual">Anual</option>
+                          </select>
+                        </div>
+                        <br />
+                        <div class="row">
+                          <div class="col-12 form-group">
+                            <button class="btn pull-right" type="submit">
+                              Enviar
+                            </button>
+                          </div>
+                        </div>
+                        <!-- Mensaje de agradecimiento -->
+                      <div style="display: none;">
+                        Gracias por enviar el formulario. Nos pondremos en contacto contigo pronto.
                       </div>
-                    </form>
-                    <!-- Mensaje de agradecimiento -->
-                    <div   style="display: none;">
-                      Gracias por enviar el formulario. Nos pondremos en contacto contigo pronto.
+                      </form>
                     </div>
                   </div>
-                </div>
                 <!--/Formulario-->
               </div>
             </div>
