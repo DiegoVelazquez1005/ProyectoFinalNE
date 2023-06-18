@@ -50,25 +50,25 @@ if ($stmt->execute()) {
             $content .= "| " . str_pad($row["nombre"], 25, " ") . " | " . str_pad($row["nivel"], 20, " ") . " | " . str_pad($row["pago"], 20, " ") . " | " . str_pad($row["correo"], 25, " ") . " | " . str_pad($row["opciones"], 20, " ") . " |\n";
         }
         $content .= "--------------------------------------------------------------------------------------------------------------------------------------\n\n";
-
-        // Enunciado personalizado para cada registro
-        $content .= "Reportes:\n\n";
-        $content .= "Nombre\tCorreo\tNivel\tOpciones\tPago\n";
-        $result->data_seek(0); // Reiniciar el puntero del resultado
-        while ($row = $result->fetch_assoc()) {
-            $content .= $row["nombre"] . "\t" . $row["correo"] . "\t" . $row["nivel"] . "\t" . $row["opciones"] . "\t" . $row["pago"] . "\n";
-            $content .= "El usuario llamado " . $row["nombre"] . " y correo " . $row["correo"] . " desea inscribirse al nivel " . $row["nivel"] . " con una forma de pago " . $row["pago"] . " y desea recibir en su correo: " . $row["opciones"] . ".\n\n";
-        }
-
-        // Guardar contenido en un archivo de texto
-        $filename = "estado_clientes.txt";
-        file_put_contents($filename, $content);
-
-        // Descargar el archivo
-        echo "<br> <a href='$filename' download> Descargar Reporte</a>";
     } else {
-        echo "La tabla cliente está vacía.";
+        $content .= "La tabla cliente está vacía.\n\n";
     }
+
+    // Enunciado personalizado para cada registro
+    $content .= "Reportes:\n\n";
+    //$content .= "Nombre\tCorreo\tNivel\tOpciones\tPago\n";
+    $result->data_seek(0); // Reiniciar el puntero del resultado
+    while ($row = $result->fetch_assoc()) {
+        //$content .= $row["nombre"] . "\t" . $row["correo"] . "\t" . $row["nivel"] . "\t" . $row["opciones"] . "\t" . $row["pago"] . "\n";
+        $content .= "El usuario llamado " . $row["nombre"] . " y correo " . $row["correo"] . " desea inscribirse al nivel " . $row["nivel"] . " con una forma de pago " . $row["pago"] . " y desea recibir en su correo: " . $row["opciones"] . ".\n\n";
+    }
+
+    // Guardar contenido en un archivo de texto
+    $filename = "estado_clientes.txt";
+    file_put_contents($filename, $content);
+
+    // Descargar el archivo
+    echo "<br> <a href='$filename' download> Descargar Reporte</a>";
 
     exit;
 } else {
