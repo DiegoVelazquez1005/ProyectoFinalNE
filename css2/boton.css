@@ -8,7 +8,10 @@
   border-radius: 0;
   transition: 0.2s;
 }
-
+.btn-primary{
+  background-color: transparent;
+  border: transparent;
+}
 .btn:hover,
 .btn:focus {
   border: 0px solid transparent;
