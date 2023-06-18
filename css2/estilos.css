@@ -277,7 +277,44 @@ body {
 
 @media (max-width: 768px) {
   .imageMP img {
+    transform: scale(0.98);
+    transform-origin: top left;
+  }
+  .imageMP  {
+
+    margin-bottom: 3%; /* Ajusta el valor según sea necesario */
+  }
+} 
+@media (max-width: 668px) {
+  .imageMP img {
+    transform: scale(0.78);
+    transform-origin: top left;
+  }
+  .imageMP  {
+
+    margin-bottom: 3%; /* Ajusta el valor según sea necesario */
+  }
+} 
+@media (max-width: 568px) {
+  .imageMP img {
+    transform: scale(0.68);
+    transform-origin: top left;
+  }
+  .imageMP  {
+
+    margin-bottom: 0%; /* Ajusta el valor según sea necesario */
+  }
+} 
+@media (max-width: 468px) {
+  .imageMP img {
     transform: scale(0.58);
     transform-origin: top left;
   }
-}
+  .imageMP {
+    
+    margin-bottom:0%; /* Ajusta el valor según sea necesario */
+  }
+} 
+
+
+
