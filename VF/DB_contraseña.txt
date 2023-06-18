@@ -1,0 +1,3 @@
+username = root
+dbname = newdbname
+password = Mi4353fe

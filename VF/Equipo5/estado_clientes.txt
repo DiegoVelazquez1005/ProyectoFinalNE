@@ -1,0 +1,21 @@
+Estado actual de la tabla client:
+
+--------------------------------------------------------------------------------------------------------------------------------------
+| Nombre        	    | Nivel    		   | Pago    		  | Correo                    | Opciones             |
+--------------------------------------------------------------------------------------------------------------------------------------
+| Eduardo Tapia             | primaria             | quincenal            | p1@correo.com             | ["becas","intercambios"] |
+| Sergio Guzmán            | secundaria           | mensual              | p2@correo.com             | ["intercambios"]     |
+| Diego Velázquez          | preparatoria         | semestral            | p3@correo.com             | ["promociones","eventos"] |
+| Alejandro Luna            | primaria             | anual                | p4@correo.com             | ["becas"]            |
+--------------------------------------------------------------------------------------------------------------------------------------
+
+Reportes:
+
+El usuario llamado Eduardo Tapia  y correo p1@correo.com desea inscribirse al nivel primaria con una forma de pago quincenal y desea recibir en su correo: ["becas","intercambios"].
+
+El usuario llamado Sergio Guzmán y correo p2@correo.com desea inscribirse al nivel secundaria con una forma de pago mensual y desea recibir en su correo: ["intercambios"].
+
+El usuario llamado Diego Velázquez y correo p3@correo.com desea inscribirse al nivel preparatoria con una forma de pago semestral y desea recibir en su correo: ["promociones","eventos"].
+
+El usuario llamado Alejandro Luna y correo p4@correo.com desea inscribirse al nivel primaria con una forma de pago anual y desea recibir en su correo: ["becas"].
+
